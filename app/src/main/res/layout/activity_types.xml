@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_fish_main"
+    tools:context=".TypesActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="96dp"
+        android:text="Types of Fish"
+        android:textColor="@color/black"
+        android:textSize="32sp"
+        android:fontFamily="@font/open_sans_light"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/firstLevel"
+        android:layout_width="180dp"
+        android:layout_height="80dp"
+
+        android:background="@drawable/bg_textview"
+        android:fontFamily="@font/open_sans_light"
+        android:gravity="center"
+        android:text="Salmon"
+        android:textColor="@color/black"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="48dp"
+        app:layout_constraintBottom_toTopOf="@+id/secondLevel"
+        app:layout_constraintEnd_toEndOf="@+id/secondLevel"
+        app:layout_constraintStart_toStartOf="@+id/secondLevel"
+        />
+
+    <TextView
+        android:id="@+id/secondLevel"
+        android:layout_width="180dp"
+        android:layout_height="80dp"
+        android:background="@drawable/bg_textview"
+        android:fontFamily="@font/open_sans_light"
+        android:gravity="center"
+        android:text="Tuna"
+        android:textColor="@color/black"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/thirdLevel"
+        android:layout_width="180dp"
+        android:layout_height="80dp"
+        android:background="@drawable/bg_textview"
+        android:fontFamily="@font/open_sans_light"
+        android:gravity="center"
+        android:text="Cod"
+        android:textColor="@color/black"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:layout_marginTop="48dp"
+        app:layout_constraintEnd_toEndOf="@+id/secondLevel"
+        app:layout_constraintStart_toStartOf="@+id/secondLevel"
+        app:layout_constraintTop_toBottomOf="@+id/secondLevel" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
